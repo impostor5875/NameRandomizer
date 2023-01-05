@@ -11,6 +11,9 @@ namespace NameRandomizer
 {
     [BepInPlugin(GUID, NAME, VERSION)]
     [BepInProcess("Among Us.exe")]
+    [BepInProcess("Among Us2.exe")]
+    [BepInProcess("Among Us3.exe")]
+    [BepInProcess("Among Us4.exe")]
     public class HarmonyMain : BasePlugin
     {
         public const string GUID = "com.github.impostor5875.namerandomizer", NAME = "Name Randomizer", VERSION = "1.0.0";

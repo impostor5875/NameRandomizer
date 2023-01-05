@@ -464,6 +464,7 @@
   <ItemGroup>
     <Compile Include="HarmonyMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShipStatusPatch.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
