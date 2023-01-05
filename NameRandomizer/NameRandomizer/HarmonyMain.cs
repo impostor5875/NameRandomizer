@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using BepInEx;
 using BepInEx.IL2CPP;
 using HarmonyLib;
+using UnityEngine.SceneManagement;
 
 namespace NameRandomizer
 {
@@ -25,6 +22,12 @@ namespace NameRandomizer
         public override void Load()
         {
             Harmony.PatchAll();
+
+            SceneManager.add_sceneLoaded((Action<Scene, LoadSceneMode>)((scene, loadscenemode) =>
+            {
+                if (scene.name == "MainMenu") // main menu never existed it was fake
+                    ModManager.Instance.ShowModStamp();
+            }));
         }
     }
 }
