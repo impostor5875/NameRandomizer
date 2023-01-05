@@ -7,7 +7,7 @@ namespace NameRandomizer
     class ShipStatusPatch
     {
         public static int funnyNumber = 0;
-        public static string[] bruhWhyCantYouRemoveItemsFromArraysThatIsTheDumbestThingEver = { "Who", "That", "Where", "What", "Sus", "Going2KillEveryoneStartingWithU", "I Don't Know", "Why", "When", "You", "You're", "I", "Everyone", "Lame", "Afk" };
+        public static string[] bruhWhyCantYouRemoveItemsFromArraysThatIsTheDumbestThingEver = { "Who", "That", "Where", "What", "Sus", "Going2KillEveryoneStartingWithU", "I Don't Know", "Why", "When", "You", "You're", "I", "Everyone", "Lame", "Afk", "Skip Vote", "Nobody", "Somebody", "They" };
         public static List<string> nameList = new List<string>();
         public static void Postfix(ShipStatus __instance)
         {
